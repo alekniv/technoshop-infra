@@ -1,5 +1,4 @@
 ﻿
-#Requires -Modules ActiveDirectory
 <#
 .SYNOPSIS
     Alta masiva de empleados de TechnoShop en Active Directory desde un CSV.
@@ -18,6 +17,8 @@
 .NOTES
     Ticket: TS-0006 - Autor: Alejandro
 #>
+
+#Requires -Modules ActiveDirectory
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [Parameter(Mandatory)]
